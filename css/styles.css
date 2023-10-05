@@ -1,0 +1,29 @@
+body{
+    background-image: url("../img/mainbackground.jpg");
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#container{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+   /* background: #b3d4fc;*/
+    margin: 1%;
+    position: relative;
+    height: 60vh;
+    width: 97vw;
+    overflow: hidden;
+    border: 2px solid burlywood;
+}
+
+#fairy{
+   /* background: url("../img/fairy.jpeg");*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 156px;
+    width: 120px;
+    top: 25%;
+    left: 20%;
+}
