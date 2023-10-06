@@ -23,6 +23,33 @@ $(function (){
     var scoreUpdated = false;
     var gameOver = false;
 
+    var theGame = setInterval(function (){
+
+        if (collision(bird , pole_1 || collision(bird , pole_2) || parseInt(bird.css('top')) <= 0 || parseInt(bird.css('top')) > containerHeight - birdheight )){
+
+            stopTheGame();
+
+        }else {
+
+            var poleCurrentPostition = parseInt(pole.css('right'));
+
+            //update the score in score board when the bird have passed the poles successfully
+            if (poleCurrentPostition > containerWidth - birdLeft){
+                if (scoreUpdated == false){
+                    score.text(parseInt(score.text())+1);
+                    scoreUpdated = true;
+                }
+            }
+
+
+        }
+    });
+
+    function stopTheGame (){
+        clearInterval(theGame);
+        gameOver = true;
+        btnRestart.slideDown();
+    }
 
     function collision($div1,$div2){
         var x1 = $div1.offset().left;
