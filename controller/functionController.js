@@ -10,6 +10,7 @@ $(function (){
     var speedSpan = $('#speed');
     var btnRestart = $('#btnRestart');
 
+
     //for get decissions
     var containerWidth = parseInt(container.width());
     var containerHeight = parseInt(container.height());
@@ -19,13 +20,15 @@ $(function (){
     var birdheight = parseInt(bird.height());
     var speed = 10;
 
+
     var goUp = false;
     var scoreUpdated = false;
     var gameOver = false;
 
+
     var theGame = setInterval(function (){
 
-        if (collision(bird , pole_1 || collision(bird , pole_2) || parseInt(bird.css('top')) <= 0 || parseInt(bird.css('top')) > containerHeight - birdheight )){
+        if (collision(bird , pole_1) || collision(bird , pole_2) || parseInt(bird.css('top')) <= 0 || parseInt(bird.css('top')) > containerHeight - birdheight ){
 
             stopTheGame();
 
@@ -35,7 +38,7 @@ $(function (){
 
             //update the score in score board when the bird have passed the poles successfully
             if (poleCurrentPostition > containerWidth - birdLeft){
-                if (scoreUpdated == false){
+                if (scoreUpdated === false){
                     score.text(parseInt(score.text())+1);
                     scoreUpdated = true;
                 }
@@ -61,7 +64,7 @@ $(function (){
             //for move the poles
             pole.css('right' , poleCurrentPostition + speed);
 
-            if (goUp == false){
+            if (goUp === false){
                 goDown();
             }
 

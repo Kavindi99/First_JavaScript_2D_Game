@@ -10,12 +10,15 @@ body{
     background-image: url("../img/gamebackground.jpg");
     background-size: cover;
    /* background: #b3d4fc;*/
-    margin: 0%;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    height: 97vh;
+    width: 98.5vw;
     overflow: hidden;
-    /*border: 2px solid burlywood;*/
+    border: 2px solid burlywood;
 }
 
 #bird{
@@ -23,15 +26,15 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    height: 210px;
-    width: 166px;
+    height: 200px;
+    width: 148px;
     top: 20%;
     left: 15%;
 }
 
 .pole {
     position: absolute;
-    height: 220px;
+    height: 180px;
     width: 82px;
    /* background-color: burlywood;*/
     background-image: linear-gradient(to bottom right, orange, yellow);
