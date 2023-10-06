@@ -47,6 +47,8 @@ body{
 }
 
 #score_board{
+    /*background-image: url("../img/scoreboard.png");
+    background-size: cover;*/
     text-align: center;
     font-size: 30px ;
     color: #227093;
