@@ -18,7 +18,7 @@ body{
     /*border: 2px solid burlywood;*/
 }
 
-#fairy{
+#bird{
     background: url("../img/bird.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -28,3 +28,41 @@ body{
     top: 20%;
     left: 15%;
 }
+
+.pole {
+    position: absolute;
+    height: 130px;
+    width: 70px;
+    background-color: burlywood;
+    right: -50px;
+}
+
+#pole_1{
+    top: 0;
+}
+
+#pole_2{
+    bottom: 0;
+}
+
+#score_board{
+    text-align: center;
+    font-size: 30px ;
+    color: #227093;
+}
+
+#btnRestart{
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 2px solid white;
+    display: none;
+}
+
