@@ -41,15 +41,71 @@ $(function (){
                 }
             }
 
+            //for check whether the poles went out of the container
+            if (poleCurrentPostition > containerWidth){
+                var newHeight = parseInt(Math.random() * 100);
+
+                //for change the poles' height
+                pole_1.css('height' , poleInitialHeight + newHeight);
+                pole_2.css('height' , poleInitialHeight - newHeight);
+
+                //for increase speed
+                speed = speed + 1;
+                speedSpan.text(speed);
+
+                scoreUpdated = false;
+
+                poleCurrentPostition = poleInitialPosition;
+            }
+
+            //for move the poles
+            pole.css('right' , poleCurrentPostition + speed);
+
+            if (goUp == false){
+                goDown();
+            }
 
         }
+    }, 40);
+
+    $(document).on('keydown' , function (e){
+
+        var key = e.keyCode;
+
+        if (key === 32 && goUp === false && gameOver === false){
+            goUp = setInterval(up , 50);
+        }
+
     });
+
+    $(document).on('keyup' , function (e){
+
+        var key = e.keyCode;
+
+        if (key === 32){
+            clearInterval(goUp);
+            goUp = false;
+        }
+
+    });
+
+    function up(){
+        bird.css('top' , parseInt(bird.css('top'))-10);
+    }
+
+    function goDown(){
+        bird.css('top' , parseInt(bird.css('top')) + 5);
+    }
 
     function stopTheGame (){
         clearInterval(theGame);
         gameOver = true;
         btnRestart.slideDown();
     }
+
+    btnRestart.click(function (){
+        location.reload();
+    });
 
     function collision($div1,$div2){
         var x1 = $div1.offset().left;
