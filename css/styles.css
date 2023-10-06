@@ -1,29 +1,30 @@
 body{
-    background-image: url("../img/mainbackground.jpg");
+    /*background-image: url("../img/mainbackground.jpg");*/
+    background: aquamarine;
     height: 100%;
     width: 100%;
     margin: 0;
 }
 
 #container{
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/gamebackground.jpg");
     background-size: cover;
    /* background: #b3d4fc;*/
-    margin: 1%;
+    margin: 0%;
     position: relative;
-    height: 60vh;
-    width: 97vw;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
-    border: 2px solid burlywood;
+    /*border: 2px solid burlywood;*/
 }
 
 #fairy{
-   /* background: url("../img/fairy.jpeg");*/
+    background: url("../img/bird.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    height: 156px;
-    width: 120px;
-    top: 25%;
-    left: 20%;
+    height: 210px;
+    width: 166px;
+    top: 20%;
+    left: 15%;
 }
