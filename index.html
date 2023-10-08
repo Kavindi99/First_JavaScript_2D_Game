@@ -24,43 +24,91 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <!--<script src="controller/functionController.js"></script>-->
 
+  <style>
+    .button {
+      position: relative;
+      background-color: #04AA6D;
+      border: none;
+      font-size: 28px;
+      color: #FFFFFF;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+      margin-left: 562px;
+      margin-top: 480px;
+      border-radius: 15px;
+    }
+
+    .button:hover{
+      background-color: #3e8e41
+    }
+
+    .button:after {
+      content: "";
+      background: #90EE90;
+      display: block;
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 350%;
+      margin-left: -20px!important;
+      margin-top: -120%;
+      opacity: 0;
+      transition: all 0.8s
+    }
+
+    .button:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      transition: 0s
+    }
+
+  </style>
 
 </head>
 
 <body>
-  <!-- Add your site or application content here -->
+  <!--&lt;!&ndash; Add your site or application content here &ndash;&gt;
   <div id="container">
 
-    <!-- bird div-->
+    &lt;!&ndash; bird div&ndash;&gt;
     <div id="bird"></div>
 
-   <!-- for up down poles-->
+   &lt;!&ndash; for up down poles&ndash;&gt;
     <div id="pole_1" class="pole"></div>
     <div id="pole_2" class="pole"></div>
 
-    <!--for score board-->
+    &lt;!&ndash;for score board&ndash;&gt;
     <div id="score_board">
       <p><b>Score : </b> <span id="score">0</span></p>
       <p><b>Speed : </b><span id="speed">10</span></p>
     </div>
 
-    <!--restart button-->
+    &lt;!&ndash;restart button&ndash;&gt;
     <button id="btnRestart">Restart</button>
 
   </div>
 
- <!-- &lt;!&ndash;for score board&ndash;&gt;
+ &lt;!&ndash; &lt;!&ndash;for score board&ndash;&gt;
   <div id="score_board">
     <p><b>Score : </b> <span id="score">0</span></p>
     <p><b>Speed : </b><span id="speed">10</span></p>
   </div>
 
   &lt;!&ndash;restart button&ndash;&gt;
-  <button id="btnRestart">Restart</button>-->
+  <button id="btnRestart">Restart</button>&ndash;&gt;
 
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="controller/functionController.js"></script>
+-->
+
+  <button class="button" id="btnStart"  onclick="document.location='playArea.html'">Start</button>
 
 </body>
 

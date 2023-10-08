@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flying Bird Game</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="playAreaBody">
+
+<!-- Add your site or application content here -->
+<div id="container">
+
+  <!-- bird div-->
+  <div id="bird"></div>
+
+  <!-- for up down poles-->
+  <div id="pole_1" class="pole"></div>
+  <div id="pole_2" class="pole"></div>
+
+  <!--for score board-->
+  <div id="score_board">
+    <p><b>Score : </b> <span id="score">0</span></p>
+    <p><b>Speed : </b><span id="speed">10</span></p>
+  </div>
+
+  <!--restart button-->
+  <button id="btnRestart">Restart</button>
+
+</div>
+
+<!-- &lt;!&ndash;for score board&ndash;&gt;
+ <div id="score_board">
+   <p><b>Score : </b> <span id="score">0</span></p>
+   <p><b>Speed : </b><span id="speed">10</span></p>
+ </div>
+
+ &lt;!&ndash;restart button&ndash;&gt;
+ <button id="btnRestart">Restart</button>-->
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="controller/functionController.js"></script>
+
+</body>
+</html>

@@ -1,6 +1,12 @@
 body{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+}
+
+#playAreaBody{
     /*background-image: url("../img/mainbackground.jpg");*/
-    background: aquamarine;
+    /*background: aquamarine;*/
+    background-image: linear-gradient(to bottom right, forestgreen, lawngreen);
     height: 100%;
     width: 100%;
     margin: 0;
