@@ -28,12 +28,13 @@ body{
 }
 
 #bird{
-    background: url("../img/bird.png");
+    /*background: url("../img/bird.png");*/
+    background: url("../img/bird.gif");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    height: 200px;
-    width: 148px;
+    height: 145px;
+    width: 145px;
     top: 20%;
     left: 15%;
 }
