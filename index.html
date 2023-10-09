@@ -25,30 +25,52 @@
   <!--<script src="controller/functionController.js"></script>-->
 
   <style>
-     h1{
+     /*h1{
        color: purple;
        text-align: center;
        margin-top: 60px;
        font-size: 70px;
-    }
+    }*/
+
+     #topic{
+       background-image: url("img/GameName.png");
+       width: 630px;
+       height: 152px;
+       position: relative;
+       margin-top: 108px;
+       margin-left: 412px;
+     }
+
+     #frontBird{
+       background-image: url("img/frontPageBird.png");
+       width: 192px;
+       height: 155px;
+       position: relative;
+       margin-top: 8px;
+       margin-left: 610px;
+     }
 
     .button {
       position: relative;
-      background-color: #04AA6D;
-      border: none;
-      font-size: 28px;
+     /* background-color: #04AA6D;*/
+      /*background-color: green;*/
+      /*background-color:forestgreen;*/
+      background-image: linear-gradient(to bottom right, forestgreen, lawngreen);
+     /* border: none;*/
+      border: 2px solid white;
+      font-size: 36px;
       color: #FFFFFF;
-      padding: 20px;
-      width: 200px;
+      padding: 10px;
+      width: 212px;
       text-align: center;
       -webkit-transition-duration: 0.4s; /* Safari */
       transition-duration: 0.4s;
       text-decoration: none;
       overflow: hidden;
       cursor: pointer;
-      margin-left: 562px;
-      margin-top: 275px;
-      border-radius: 15px;
+      margin-left: 624px;
+      margin-top: 62px;
+      border-radius: 30px;
     }
 
     .button:hover{
@@ -110,12 +132,14 @@
   &lt;!&ndash;restart button&ndash;&gt;
   <button id="btnRestart">Restart</button>&ndash;&gt;
 
-
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="controller/functionController.js"></script>
 -->
-  <h1>FLYING BIRD</h1>
-  <button class="button" id="btnStart"  onclick="document.location='playArea.html'">Start</button>
+  <div id="topic"></div>
+
+  <div id="frontBird"></div>
+
+  <button class="button" id="btnStart"  onclick="document.location='playArea.html'">Play</button>
 
 </body>
 
